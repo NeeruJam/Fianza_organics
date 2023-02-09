@@ -54,12 +54,17 @@ header{
     transition-duration: 1s;
   }
 
-
+.ham{
+  margin: 1rem;
+  padding-top: 0.5rem;
+}
   .icons a{
     color: black;
     padding: 1rem;
 }
-
+.menu_icon{
+  display: none;
+}
 
 /* Dropdown button */
 .dropdown .dropbtn  {
@@ -177,6 +182,26 @@ footer li{
   .dropdown .dropbtn{
     font-size: 1rem;
   }
+  .menu{
+    display: none;
+  }
+.icons{
+  display: none;
+}
+  .menu_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .menu_icon ul {
+   display: none;
+  }
+  
+
   }
 
 
