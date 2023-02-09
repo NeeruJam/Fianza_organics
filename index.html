@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Josefin+Sans:ital@1&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Dancing+Script:wght@700&family=Josefin+Sans:ital@1&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+   
     <title>Fianza Organics</title>
     <link rel="icon" href="IMG-20230208-WA00001.jpg" type="image/icon type">
 </head>
 <body>
-
+<div>
     <!--      HEADER        -->
-    <header>
+    <header >
         <div class="logo">
             <img src="IMG-20230208-WA0000.jpg" alt="fianza_organics logo">
             <span style="font-family: 'Dancing Script', cursive;">Fianza Organics</span>
         </div>
-        <div class="menu">
+        <div class="menu"  id="myTopnav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <div class="dropdown">
+                <li><div class="dropdown">
                     <button class="dropbtn">Our Products</button>
                     <div class="dropdown-content">
                       <a href="#">Cold Processed Soaps</a>
@@ -35,9 +36,11 @@
                       <a href="">Deo Creams</a>
                       <a href="">View All</a>
                     </div>
-                  </div>
+                  </div></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <ion-icon name="menu-outline"></ion-icon></a>
             </ul>
         </div>
         <div class="icons">
@@ -49,14 +52,50 @@
     <!--    BANNER -->
 
     <div class="banner">
-        <span style="font-size: 70px; font-weight: bolder;font-family: 'Dancing Script', cursive;">Fianza</span>
+        <span style="font-size: 4rem; font-weight: bolder;font-family: 'Dancing Script', cursive;">Fianza</span>
         <br>
-        <span style="font-size: 30px; font-weight: bold;">Bond between nature and body</span>
+        <span style=" font-weight: bold;">Bond between nature and body</span>
         <br>
-        <span style="font-size: 30px; font-weight: 20px;">100% Handmade with Love</span>
+        <span>100% Handmade with Love</span>
     </div>
 
-
+<!--    FEATURED PRODUCTS     -->
+<div style="padding: 20px; ">Featured Products</div>
+<div class="featured">
+    <div class="product">
+       
+        <a href="" style="text-decoration: none;">
+            <img src="pictures\272046235_616174749486596_6589292714592674504_n.jpeg" alt="">
+            <h4 style="padding-top: 10px;">Saffron Gel & Cream</h4>
+        </a>
+        <h4 style="padding-top: 10px;">Price:</h4>
+    </div>
+    <div class="product">
+       
+        <a href="" style="text-decoration: none;">
+            <img src="pictures\315651003_666743205056542_4524856169236655902_n.jpeg" alt="">
+            <h4 style="padding-top: 10px;">Herbal Hair Oil</h4>
+        </a>
+        <h4 style="padding-top: 10px;">Price:</h4>
+    </div>
+    <div class="product">
+       
+        <a href="" style="text-decoration: none;">
+            <img src="pictures\306841795_495652288653358_5395270052998776732_n.jpeg" alt="">
+            <h4 style="padding-top: 10px;">Cold Processed Soaps</h4>
+        </a>
+        <h4 style="padding-top: 10px;">Price:</h4>
+    </div>
+    <div class="product">
+       
+        <a href="" style="text-decoration: none;">
+            <img src="pictures\242232116_875451853086358_4138543056477427814_n.jpeg" alt="">
+            <h4 style="padding-top: 10px;">Customized Gift Hampers</h4>
+        </a>
+        <h4 style="padding-top: 10px;">Price:</h4>
+    </div>
+</div>
+<div class="viewAll"><a href="products.html">View All</a></div>
 
 <!--     FOOTER -->
 <footer>
@@ -89,7 +128,16 @@
     </div>
 </footer>
 
-
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "menu") {
+        x.className += "_responsive";
+      } else {
+        x.className = "menu";
+      }
+    }
+    </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
